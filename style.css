@@ -1,0 +1,50 @@
+.banner {
+    text-align: center;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675082725/IMG_0600_g18g8u.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+}
+
+.banner > h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+.banner > h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+.banner > h4 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+}
+
+.about-me > h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+.about-me {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo {
+    padding: 20px;
+}
+
+.photo > img {
+    height: auto;
+    width: 300px;
+    
+}
+
+.description {
+    padding: 20px;
+    width: 60%;
+}
