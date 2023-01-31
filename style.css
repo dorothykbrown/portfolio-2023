@@ -48,3 +48,22 @@
     padding: 20px;
     width: 60%;
 }
+
+.selected-works {
+    text-align: center;
+}
+
+.selected-works > .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    width: 25%;
+    height: auto;
+}
+
+.item > img {
+    padding: 20px;
+    width: 30%;
+}
