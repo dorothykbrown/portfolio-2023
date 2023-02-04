@@ -5,6 +5,7 @@
     background-size: cover;
     background-position: center;
     padding: 150px 0;
+    color: white;
 }
 
 .banner > h1 {
@@ -32,6 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 50px;
 }
 
 .photo {
@@ -51,6 +53,7 @@
 
 .selected-works {
     text-align: center;
+    margin: 50px;
 }
 
 .selected-works > .items {
@@ -67,3 +70,44 @@
     padding: 20px;
     width: 30%;
 }
+
+.skill-grid {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3em 20px 3em 20px;
+}
+
+.skill-grid > img {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.skills-technologies {
+    margin: 50px;
+}
+
+.experience {
+    margin: 50px 200px;
+}
+
+.reviews {
+    margin: 50px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.contact-section {
+    margin: 50px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
