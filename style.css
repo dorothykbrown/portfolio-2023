@@ -101,13 +101,35 @@
     text-align: center;
 }
 
-.contact-section {
-    margin: 50px;
+.footer {
+    background: #F4F4F4;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    color: rgba(0,0,0,0.3);
+    bottom: 0px;
 }
 
-.contacts {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
+.footer > .fa-heart {
+    color: #D23333;
 }
+  
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.footer-links >  a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+.footer-links > a:hover {
+    opacity: 1;
+}
+  
 
