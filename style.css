@@ -1,39 +1,6 @@
-.banner {
-    text-align: center;
-    height: 600px;
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1560791005/DKB%20Cuba%20-%20Trinidad.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 150px 0;
-    color: white;
-}
-
-.banner > h1 {
-    font-family: 'Merriweather', serif;
-    font-weight: 400;
-}
-
-.banner > h3 {
-    font-family: 'Merriweather', serif;
-    font-weight: 300;
-}
-
-.banner > h4 {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-weight: 500;
-}
-
-.about-me > h2 {
-    font-family: 'Merriweather', serif;
-    font-weight: 400;
-}
-
-.about-me {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 50px;
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
 }
 
 .photo {
@@ -43,7 +10,77 @@
 .photo > img {
     height: auto;
     width: 300px;
-    
+    position: relative;
+    z-index: 0;
+}
+
+.circle-pink {
+    height: 250px;
+    width: 250px;
+    background-color: #FF4F4F;
+    border-radius: 50%;
+    position: absolute;
+    top: 600px;
+    right: 400px;
+    z-index: 1;
+}
+
+.circle-beige {
+    height: 400px;
+    width: 400px;
+    background-color: #CAB9A9;
+    border-radius: 50%;
+    position: absolute;
+    right: 400px;
+    top: 300px;
+    z-index: -1;
+}
+
+.square-blue {
+    height: 350px;
+    width: 400px;
+    background-color: #DEF4FF;
+    position: absolute;
+    top: 350px;
+    right: 700px;
+    z-index: -2;
+}
+
+.banner {
+    text-align: center;
+    padding: 150px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner > h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+.banner > h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.banner > h4 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 500;
+}
+
+.about > h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+.about {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px;
 }
 
 .description {
