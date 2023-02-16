@@ -1,0 +1,5 @@
+.navbar {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-items: space-between;
+}
