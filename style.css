@@ -1,6 +1,17 @@
 .navbar {
     font-family: 'Open Sans', sans-serif;
-    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 80%;
+    justify-content: flex-end;
+    gap: 50px;
 }
 
 .photo {
@@ -11,7 +22,7 @@
     height: auto;
     width: 300px;
     position: relative;
-    z-index: 0;
+    z-index: -2;
 }
 
 .circle-pink {
@@ -20,9 +31,9 @@
     background-color: #FF4F4F;
     border-radius: 50%;
     position: absolute;
-    top: 600px;
+    top: 500px;
     right: 400px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .circle-beige {
@@ -31,9 +42,9 @@
     background-color: #CAB9A9;
     border-radius: 50%;
     position: absolute;
-    right: 400px;
-    top: 300px;
-    z-index: -1;
+    right: 450px;
+    top: 200px;
+    z-index: -3;
 }
 
 .square-blue {
@@ -43,7 +54,7 @@
     position: absolute;
     top: 350px;
     right: 700px;
-    z-index: -2;
+    z-index: -4;
 }
 
 .banner {
@@ -80,17 +91,20 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 50px;
 }
 
 .description {
-    padding: 20px;
-    width: 60%;
+    padding: 0 100px;
+}
+
+.description > p {
+    text-align: justify;
 }
 
 .selected-works {
     text-align: center;
-    margin: 50px;
+    background-color: #DEF4FF;
+    padding-bottom: 100px;
 }
 
 .selected-works > .items {
@@ -112,7 +126,7 @@
     display: grid;
     grid-gap: 16px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 3em 20px 3em 20px;
+    padding: 3em 100px;
 }
 
 .skill-grid > img {
@@ -130,22 +144,11 @@
     margin: 50px 200px;
 }
 
-.reviews {
-    margin: 50px;
-}
-
 .section-title {
-    text-align: center;
-}
-
-.contact-section {
-    margin: 50px;
-}
-
-.contacts {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px;
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    padding: 40px 100px;
 }
 
 .footer {
