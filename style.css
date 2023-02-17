@@ -5,6 +5,7 @@ body {
 .navbar {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+    font-size: large;
     position: fixed;
     background-color: white;
     width: 100%;
