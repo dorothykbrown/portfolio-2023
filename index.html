@@ -1,139 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/0a76dbf0fd.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;700&family=Merriweather:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@400;500family=Jost:wght@300;400;500;600&family=Karla:wght@200;300&family=Merriweather:wght@300;400&family=Open+Sans:wght@300;400;700&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#work">Work</a></li>
-        </ul>
-    </div>
-
-    <div class="banner">
-        <div class="banner-header">
-            <h1>Dorothy Brown</h1>
-            <h3>Software and Structural Engineer</h3>
-        </div>
-        <div class="photo">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676588787/DB_baxbyt.svg"/>
-            <div class="circle-beige"></div>
-            <div class="circle-pink"></div>
-            <div class="square-blue"></div>
-        </div>
-    </div>
-  
-    <div id="about" class="about">
-        <div class="section-title">
-            <h2>About Me</h2>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0a76dbf0fd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;700&family=Merriweather:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@400;500family=Jost:wght@300;400;500;600&family=Karla:wght@200;300&family=Merriweather:wght@300;400&family=Open+Sans:wght@300;400;700&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
         </div>
 
-        <div class="about-content">
-            <div class="skill-grid">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512684/Ruby_xdfblo.png" alt="Ruby">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513007/Rails_Logo_w8pxtx.png" alt="Ruby On Rails">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512891/JS_Icon_Circle_zr8fdr.svg" alt="JavaScript">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512178/CSS_icon_xpvyjl.svg" alt="CSS">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512598/Sass_Circle_ahmvzd.png" alt="Sass">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512336/HTML5_kconja.svg" alt="HTML">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512759/github-cat-in-a-circle_318-41747_koak09.jpg" alt="GitHub">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513088/cloudinary_icon_djx8qc.png" alt="Cloudinary">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512038/go-programming-language_aenlnc.png" alt="Golang">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512045/kubernetes_1_tsmo2i.svg" alt="Kubernetes">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/docker_krouqg.png" alt="Docker">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/python_fqruxn.png" alt="Python">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633367323/django_logo_zhb3ot.png" alt="Django">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633368023/Graphql_Logo_auzrer.png" alt="GraphQL">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190710/terraform_vbub3w.png" alt="Terraform">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190674/React-icon_lu1tlo.png" alt="React">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/aws-lambda-logo_nreoqg.svg" alt="AWS Lambda">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/AWS_serverless_logo_accgjb.png" alt="AWS Serverless">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190887/material-ui-1_rzws8s.svg" alt="Material UI">
+        <div class="banner">
+            <div class="banner-header">
+                <h1>Dorothy Brown</h1>
+                <h3>Software and Structural Engineer</h3>
             </div>
-            
-            <div class="description">
-                <div class="title">
-                    <h2>Hi, I'm Dorothy!</h2>
+            <div class="photo">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676648885/My_project_mbvlbo.png"/>
+                <div class="circle-beige"></div>
+                <div class="circle-pink"></div>
+                <div class="square-blue"></div>
+            </div>
+        </div>
+    
+        <div id="about" class="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="skill-grid">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512684/Ruby_xdfblo.png" alt="Ruby">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513007/Rails_Logo_w8pxtx.png" alt="Ruby On Rails">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512891/JS_Icon_Circle_zr8fdr.svg" alt="JavaScript">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512178/CSS_icon_xpvyjl.svg" alt="CSS">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512598/Sass_Circle_ahmvzd.png" alt="Sass">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512336/HTML5_kconja.svg" alt="HTML">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512759/github-cat-in-a-circle_318-41747_koak09.jpg" alt="GitHub">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513088/cloudinary_icon_djx8qc.png" alt="Cloudinary">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512038/go-programming-language_aenlnc.png" alt="Golang">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512045/kubernetes_1_tsmo2i.svg" alt="Kubernetes">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/docker_krouqg.png" alt="Docker">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/python_fqruxn.png" alt="Python">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633367323/django_logo_zhb3ot.png" alt="Django">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633368023/Graphql_Logo_auzrer.png" alt="GraphQL">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190710/terraform_vbub3w.png" alt="Terraform">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190674/React-icon_lu1tlo.png" alt="React">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/aws-lambda-logo_nreoqg.svg" alt="AWS Lambda">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/AWS_serverless_logo_accgjb.png" alt="AWS Serverless">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190887/material-ui-1_rzws8s.svg" alt="Material UI">
                 </div>
                 
-                <p>
-                    I am a software engineer with 3+ years of experience in developing and delivering high-quality,
-                    scalable software solutions for the FinTech, Advertising and Automobile industries. 
-                    I am proficient in Python and have additional experience in Golang, Ruby, React and JavaScript, with expertise
-                    in developing RESTful APIs, microservices, and cloud-based applications. I led the development of
-                    multiple projects, including a reporting system to provide users with real-time insights into their
-                    ad performance on Bing, Facebook and Google, resulting in improved customer experience and increased revenue.
-    
-                </p>
-                <p>
-                    I hold a Master of Science from the Massachusetts Institute of Technology in Civil Engineering
-                    and Sustainability and previously worked as a project engineer on large and small-scale projects around the
-                    greater New York City area. Additionally, I was awarded a fellowship 
-                    from the Fulbright U.S. Student Program to conduct research in the Pontificia Universidade Catolica in 
-                    Rio de Janeiro, Brazil on the use of natural materials in sustainable contruction.
-                </p>
+                <div class="description">
+                    <div class="title">
+                        <h2>Hi, I'm Dorothy!</h2>
+                    </div>
+                    
+                    <p>
+                        I am a software engineer with 3+ years of experience in developing and delivering high-quality,
+                        scalable software solutions for the FinTech, Advertising and Automobile industries. 
+                        I am proficient in Python and have additional experience in Golang, Ruby, React and JavaScript, with expertise
+                        in developing RESTful APIs, microservices, and cloud-based applications. I led the development of
+                        multiple projects, including a reporting system to provide users with real-time insights into their
+                        ad performance on Bing, Facebook and Google, resulting in improved customer experience and increased revenue.
+        
+                    </p>
+                    <p>
+                        I hold a Master of Science from the Massachusetts Institute of Technology in Civil Engineering
+                        and Sustainability and previously worked as a project engineer on large and small-scale projects around the
+                        greater New York City area. Additionally, I was awarded a fellowship 
+                        from the Fulbright U.S. Student Program to conduct research in the Pontificia Universidade Catolica in 
+                        Rio de Janeiro, Brazil on the use of natural materials in sustainable contruction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="work" class="selected-works">
+            <div class="section-title">
+                <h2>Selected Works</h2>
+            </div>
+        
+            <div class="items">
+                <div class="item">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675189895/indebted_logo_kezzln.png">
+                    <p>Stack: React, AWS Serverless, Golang, Terraform</p>
+                    <ul>
+                    <li>Developed a self-service portal for clients, reducing support overhead and enhancing business offerings.</li>
+                    <li>Collaborated with a team of 2-3 engineers to build new features</li>
+                    <li>Grew technical expertise, including React and AWS serverless</li>
+                    </ul>
+                    <a href="https://www.indebted.co/en-GB" target="blank">Visit Company Website</a>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676649359/My_project-1_dpyjic.png">
+                    <p>Stack: Python, Django, GraphQL, HTML, PostgreSQL</p>
+                    <ul>
+                    <li>Developed and maintained a reporting system to provide users with real-timeinsights into their ad performance on Bing, Facebook and Google</li>
+                    <li>Created and implemented a work-scheduler that automated the import and download of reports and ptimization data from tird-party networks.</li>
+                    <li>Enhanced and streamlined the ad-creation process with AI-driven suggestions and optimization.</li>
+                    </ul>
+                    <a href="https://www.leadzai.com/" target="blank">Visit Company Website</a>
+                </div>
+                <div class="item">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg">
+                    <p>Stack: Golang, Kubernetes, Docker</p>
+                    <ul>
+                    <li>Developed a video streaming microservice for an in-car entertainment system</li>
+                    <li>Built features for a music streaming microservice</li>
+                    <li>Collaborated with the client to ensure features met their requirements</li>
+                    </ul>
+                    <a href="https://freiheit.com/" target="blank">Visit Company Website</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="projects" id="projects">
+            <div class="col-md-12 example-title">
+                <h2>Featured Projects</h2>
+            </div>
+        
+            <ul id="project-type-selector" class="list-inline tabs-underlined">
+        
+            <div class="container filter-items">
+        
+                <input class="card-filters filter-item" type="radio" id="all" name="color"/>
+                <label for="all">All</label>
+                <input class="card-filters filter-item"type="radio" id="structural" name="color" />
+                <label for="structural">Structural</label>
+                <input class="card-filters filter-item" type="radio" id="developer" name="color"/>
+                <label for="developer">Developer</label>
+            
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>East Flatbush Library</h4>
+                                <p>Complete renovation of an existing library building that once completed will create a bright, central patron area full of natural light in addition to an innovative façade.
+                                </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-EFL">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>Park Avenue Synagogue</h4>
+                                <p>Renovation of the iconic Park Avenue Synagogue including the removal of about 70% of the 4th floor slab and the re-support of the columns above.
+                                </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-PASyn">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>Pier 57</h4>
+                                <p>Conversion of historic shipping terminal listed on State and National Registers into a retail, arts and entertainment, office and public park complex.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Pier57">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+                <div class="tile developer filter-item">
+                    <div class="flip-card developer filter-item" data-category="developer">
+                        <div class="flip-card-inner developer">
+                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg)">
+                            </div>
+                            <div class="card-info developer">
+                                <h4>freiheit.com</h4>
+                                <p>Developed microservices for an in-car entertainment system in Golang.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Freiheit">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile developer filter-item">
+                    <div class="flip-card developer filter-item" data-category="developer">
+                        <div class="flip-card-inner developer">
+                            <div class="card-project developer" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159627/WhimAway.png)">
+                            </div>
+                            <div class="card-info developer">
+                                <h4>WhimAway</h4>
+                                <p>Developed a responsive clone of AirBnb allowing users to rent Whimsical properties--Castles, Treehouses, Sailboats</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Whim">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile developer filter-item">
+                    <div class="flip-card developer filter-item" data-category="developer">
+                        <div class="flip-card-inner developer">
+                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/InstaItinerary.png)">
+                            </div>
+                            <div class="card-info developer">
+                                <h4>InstaItinerary</h4>
+                                <p>Developed a responsive web app that generates an itinerary of events based on user preferences and amount of time they have available.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Insta-Modal">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSouth.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>Park Avenue South</h4>
+                                <p>Silman was involved in the design to transform the former United Charities Building, an existing 9-story structure into an 18-story commercial and residential building.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>475 10th Avenue</h4>
+                                <p>Fit-out of the twelfth and thirteenth floors of an existing building for office space including the addition of 50-ft long interior bridge.
+                                </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-475_10thAve">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile structural filter-item">
+                    <div class="flip-card structural filter-item" data-category="structural">
+                        <div class="flip-card-inner structural">
+                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png)">
+                            </div>
+                            <div class="card-info structural">
+                                <h4>West 76th Street</h4>
+                                <p>Silman was involved in a gut-renovation of a townhouse residence including the design of 5 different stair types to connect the interior and new rooftop green spaces.
+                                </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-41W76">
+                                More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile developer filter-item">
+                    <div class="flip-card developer filter-item" data-category="developer">
+                        <div class="flip-card-inner developer">
+                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633367233/Advertio_logo_bov7oi.png)">
+                            </div>
+                            <div class="card-info developer">
+                                <h4>Leadzai</h4>
+                                <p>Implemented new features for an ad management web app using Python and Django.</p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Leadzai">
+                                    More Information
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-EFL">
+            East Flatbush Library Project Info
+        </button>
+
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="https://github.com/dorothykbrown" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dorothy-brown/" target="blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
+  
+
+<!-- 41W76 Modal -->
+<div class="modal fade" id="Modal-41W76" tabindex="-1" aria-labelledby="Modal-41W76Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal-41W76Title">76th Street Residence</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png" alt="76th Street Residence" style="width: 100%;">
+                <p>Architect: RAAD Studio</p>
+                <p>My Role:</p>
+                <ul>
+                    <li>Determined the loads - dead and live - per NYC Building Code Chapter 16</li>
+                    <li>Designed steel members per AISC manual</li>
+                    <li>Designed three custom steel bent-plate staircases using RISA 3-D and AISC manual and ASD load combinations</li>
+                    <li>Selected cold-formed steel joists for floor framing</li>
+                    <li>Reviewed steel shop drawings</li>
+                    <li>Visited the site to observe field conditions and respond to contractor's concerns</li>
+                </ul>
+                <a href="http://raadstudio.com/project/central-park-west/" target="blank">Visit Architect Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
+</div>
 
-    <div id="work" class="selected-works">
-        <div class="section-title">
-            <h2>Selected Works</h2>
+<!-- 475_10thAve Modal -->
+<div class="modal fade" id="Modal-475_10thAve" tabindex="-1" aria-labelledby="Modal-475_10thAveTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="Modal-475_10thAveTitle">475 10th Ave</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-       
-        <div class="items">
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675189895/indebted_logo_kezzln.png">
-                <p>Stack: React, AWS Serverless, Golang, Terraform</p>
-                <ul>
-                <li>Developed a self-service portal for clients, reducing support overhead and enhancing business offerings.</li>
-                <li>Collaborated with a team of 2-3 engineers to build new features</li>
-                <li>Grew technical expertise, including React and AWS serverless</li>
-                </ul>
-                <a href="https://www.indebted.co/en-GB" target="blank">Visit Company Website</a>
+        <div class="modal-body">
+            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png" alt="475 10th Ave" style="width: 100%;">
+            <p>Architect: Andrew Franz Architect</p>
+            <p>My Role:</p>
+            <ul>
+                <li>Analyzed existing structural members per NYC Building Code Chapter 16</li>
+                <li>Designed a custom, 50-foot span interior bridge that was asymmetrical in plan and had only one additional support</li>
+                <li>Maintained ongoing coordination with the architect</li>
+                <li>Supported architect and contractors during construction, reviewing shop drawings and providing periodic site visits to address unexpected existing conditions</li>
+            </ul>
+            <a href="https://andrewfranz.com/hill-offices.html" target="blank">Visit Architect Website</a>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Leadzai Modal -->
+<div class="modal fade" id="Modal-Leadzai" tabindex="-1" aria-labelledby="leadzai-ModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="leadzai-ModalTitle">Leadzai</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675082654/Leadzai_Logo_Long_sqwmpe.jpg">
+            <div class="modal-body">
                 <p>Stack: Python, Django, GraphQL, HTML, PostgreSQL</p>
                 <ul>
-                <li>Developed and maintained a reporting system to provide users with real-timeinsights into their ad performance on Bing, Facebook and Google</li>
-                <li>Created and implemented a work-scheduler that automated the import and download of reports and ptimization data from tird-party networks.</li>
-                <li>Enhanced and streamlined the ad-creation process with AI-driven suggestions and optimization.</li>
+                    <li>Implemented new backend features for an online ad creation and management platform
+                    </li>
+                    <li>Used Bing, Facebook and Google Adwords APIs to integrate Ad reporting features with the application</li>
+                    <li>Aided in site maintenance, fixing and reporting bugs</li>
                 </ul>
-                <a href="https://www.advertio.com/" target="blank">Visit Company Website</a>
+                <a href="https://www.leadzai.com/" target="blank">Visit Company Website</a>
             </div>
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg">
-                <p>Stack: Golang, Kubernetes, Docker</p>
-                <ul>
-                <li>Developed a video streaming microservice for an in-car entertainment system</li>
-                <li>Built features for a music streaming microservice</li>
-                <li>Collaborated with the client to ensure features met their requirements</li>
-                </ul>
-                <a href="https://freiheit.com/" target="blank">Visit Company Website</a>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
-            
         </div>
     </div>
+</div>
+  
+<!-- EFL Modal -->
+<div class="modal fade" id="Modal-EFL" tabindex="-1" aria-labelledby="Modal-EFLTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="Modal-EFLTitle">East Flatbush Library</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png" alt="East Flatbush Library" style="width: 100%;">
+            <p>Architect: LevenBetts</p>
+            <p>My Role:</p>
+            <ul>
+                <li>Analyzed existing structural members to remain per NYC Building Code Chapter 16</li>
+                <li>Designed new steel and wood members per AISC and NDS  specifications</li>
+                <li>Designed wood framing for a custom skylight support structure for gravity and lateral loads</li>
+                <li>Coordinated efforts with the architect and the DDC</li>
+                <li>Prepared a structural drawing set and a calculation package for submission to the DDC</li>
+                <li>Visited the site to document dimensions and spacing of existing beams and columns and to determine the build-up of existing 1st floor</li>
+                <li>Reviewed and responding to requests for information and submittals during the construction administration project phase</li>
+            </ul>
+            <a href="https://www.levenbetts.com/work.php#var1=PROJECTS&var2=EFB&var3=4" target="blank">Visit Architect Website</a>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+  
 
-    <div class="footer">
-        <div class="footer-links">
-            <a href="https://github.com/dorothykbrown" target="blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dorothy-brown/" target="blank"><i class="fab fa-linkedin"></i></a>
+<!-- Freiheit Modal -->
+<div class="modal fade" id="Modal-Freiheit" tabindex="-1" aria-labelledby="freiheit-ModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="freiheit-ModalTitle">freiheit.com</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Stack: Golang</p>
+                <ul>
+                    <li>Implemented new features with limited supervision, asking for support as needed
+                    </li>
+                    <li>Coordinated with client to clarify details of new features to be implemented and to review code developed to ensure it met the requirements of the user story</li>
+                    <li>Created unit tests for each new feature</li>
+                </ul>
+                <a href="https://freiheit.com/de/" target="blank">Visit Company Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-</body>
-</html>
+</div>
+
+<!-- InstaItinerary Modal -->
+<div class="modal fade" id="Insta-Modal" tabindex="-1" aria-labelledby="Insta-ModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Insta-ModalTitle">InstaItinerary</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Photo and Video Carousel -->
+                <div id="carousel-Insta-Controls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249786/InstaItinerary-3.png" class="d-block w-50" alt="Login">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249787/InstaItinerary-4.png" class="d-block w-50" alt="Category and Location Selection">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249788/InstaItinerary-6.png" class="d-block w-50" alt="Time and Search Radius Selection">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249787/InstaItinerary-7.png" class="d-block w-50" alt="Generated Itinerary">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249788/InstaItinerary-9.png" class="d-block w-50" alt="Directions">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561249788/InstaItinerary-10.png" class="d-block w-50" alt="Event Reviews">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-Insta-Controls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-Insta-Controls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+    
+                <p>Stack: Ruby on Rails, CSS, HTML, JavaScript, Google Places API, MapBox API</p>
+                <ul>
+                    <li>Created the application skeleton - models, views, controllers and routes - developed the controller methods and defined the models</li>
+                    <li>Defined methods to use the Google Places API to find events that matched user preferences and to get reviews of each event</li>
+                    <li>Used Mapbox API to generate walking directions between events and to incorporate travel time into the total itinerary time</li>
+                    <li>Implemented logic to generate an itinerary of events to fill the user's available time, taking into account the approximate duration of each event and the travel time between events</li>
+                </ul>
+                <a href="http://www.insta-itinerary.club/" target="blank">Go to Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<!-- PAS Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Park Avenue South</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="large-photo" src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSouth.png" alt="Park Avenue South" style="width: 100%;">
+                <p>Architect: Rogers Partners Architects</p>
+                <p>My Role:</p>
+                <ul>
+                    <li>Determined the loads - dead and live - per NYC Building Code Chapter 16</li>
+                    <li>Modeled existing structure with updated loads and modifications per the proposed design in RAM Structural Systems</li>
+                    <li>Designed new structural members and reinforcement for existing members as needed for gravity and lateral loads</li>
+                    <li>Coordinated with architect from Schematic Design through 100% Construction Document project phases</li>
+                    <li>Visited the site to document existing structural conditions</li>
+                </ul>
+                <a href="https://www.rogersarchitects.com/287-park-avenue-south/" target="blank">Visit Architect Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PASyn Modal -->
+<div class="modal fade" id="Modal-PASyn" tabindex="-1" aria-labelledby="Modal-PASynTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal-PASynTitle">Park Avenue Synagogue</h5></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png" alt="Park Avenue Synagogue" style="width: 100%;">
+                <p>Architect: Murphy Burnham and Buttrick Architects</p>
+                <p>My Role:</p>
+                <ul>
+                    <li>Determined design loads - dead, live, snow and wind - per the NYC Building Code</li>
+                    <li>Prepared probe documents where information on existing structural conditions was needed</li>
+                    <li>Visited the site to document dimensions and spacing of existing beams and columns</li>
+                    <li>Designed a new steel-framed two-story bulkhead for gravity and lateral loads per the NYC Building Code and AISC manual using RISA 3-D</li>
+                    <li>Modeled existing structure with updated loads and modifications per the proposed design in RISA 3-D to determine where reinforcement was required</li>
+                    <li>Analyzed existing steel, full-story Vierendeel trusses to determine the where reinforcement was required and designing the associated reinforcement</li>
+                    <li>Worked with architect to create a detailed load map to document all of the different dead and live load conditions throughout the building for accurate modeling, analysis and design of the building</li>
+                    <li>Maintained ongoing coordination with the architect</li>
+                </ul>
+                <a href="https://www.mbbarch.com/work/park-avenue-synagogue" target="blank">Visit Architect Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pier57 Modal -->
+<div class="modal fade" id="Modal-Pier57" tabindex="-1" aria-labelledby="Modal-Pier57Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal-Pier57Title">Pier 57</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png" alt="Pier 57" style="width: 100%;">
+                <p>Architect: Handel Architects</p>
+                <p>My Role:</p>
+                <ul>
+                    <li>Designed new steel members and analyzed the impact on the existing structure via structural modeling with RAM Structural Systems</li>
+                    <li>Designed reinforcement for areas where existing steel members and structural slab would need to be reinforced for new loads and configuration</li>
+                    <li>Designed a two-story rooftop pavilion for gravity and lateral loads, including the design of a custom spandrel beam to support the channel glass and nana-wall facade</li>
+                    <li>Designed an above ground ConEdison Vault structure for blast loading and preparation of the associated calculation package</li>
+                </ul>
+                <a href="https://handelarchitects.com/project/pier-57" target="blank">Visit Architect Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<!-- Whim Modal -->
+<div class="modal fade" id="Modal-Whim" tabindex="-1" aria-labelledby="Modal-WhimTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal-WhimTitle">WhimAway</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+    
+                <!-- Photo and Video Carousel -->
+                <div id="carousel-Whim-Controls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561252868/Screenshot_2019-06-23_at_02.13.22_mi4lto.png" class="d-block w-100" alt="Home Page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561252868/Screenshot_2019-06-23_at_02.14.13_lklure.png" class="d-block w-100" alt="All Properties Page">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561252869/Screenshot_2019-06-23_at_02.17.11_cwzgzk.png" class="d-block w-100" alt="Property Details">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561252871/Screenshot_2019-06-23_at_02.19.45_iemwqm.png" class="d-block w-100" alt="List Property">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561252865/Screenshot_2019-06-23_at_02.19.58_x0ya3r.png" class="d-block w-100" alt="My Properties Page">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-Whim-Controls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-Whim-Controls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+        
+                <p>Stack: Ruby on Rails, CSS, HTML, JavaScript</p>
+                <ul>
+                    <li>Used devise to handle log-in and user authentication</li>
+                    <li>Created app skeleton - models, views, controllers and routes - developed the controller methods and defined required models</li>
+                    <li>Created a way to store the reserved dates for each property and implemented logic so that they could only be booked on days they are available</li>
+                    <li>Deployed project to Heroku</li>
+                </ul>
+                <a href="https://whim-away-dorothykbrown.herokuapp.com/" target="blank">Go to Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+  
