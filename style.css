@@ -2,23 +2,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+.nav {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     font-size: large;
     position: fixed;
     background-color: white;
     width: 100%;
+    padding: 25px 100px;
 }
 
-.navbar > ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-basis: 100%;
-    justify-content: flex-end;
-    gap: 50px;
-    padding: 25px 100px;
+.nav-link.active {
+    border-bottom: 2px solid #FF4F4F;
 }
 
 .circle-pink {
