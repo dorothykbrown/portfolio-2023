@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: large;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    gap: 50px;
+    padding: 25px 100px;
+}
+
+.circle-pink {
+    height: 250px;
+    width: 250px;
+    background-color: #FF4F4F;
+    border-radius: 50%;
+    position: absolute;
+    top: 500px;
+    right: 400px;
+    z-index: -1;
+}
+
+.circle-beige {
+    height: 400px;
+    width: 400px;
+    background-color: #CAB9A9;
+    border-radius: 50%;
+    position: absolute;
+    right: 450px;
+    top: 200px;
+    z-index: -3;
+}
+
+.square-blue {
+    height: 350px;
+    width: 400px;
+    background-color: #DEF4FF;
+    position: absolute;
+    top: 350px;
+    right: 700px;
+    z-index: -4;
+}
+
+.banner {
+    text-align: center;
+    padding: 150px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner > .photo {
+    padding: 20px;
+}
+
+.banner > .photo > img {
+    height: auto;
+    width: 300px;
+    position: relative;
+    z-index: -2;
+}
+
+.banner-header > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.banner-header > h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+.about-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-content > .skill-grid {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 3em 100px;
+}
+
+.about-content > .skill-grid > img {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.about-content > .description {
+    padding: 0 100px;
+}
+
+.about-content > .description > .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+}
+
+.about-content > .description > p {
+    text-align: justify;
+}
+
+.selected-works {
+    text-align: center;
+    background-color: #DEF4FF;
+    padding-bottom: 100px;
+}
+
+.selected-works > .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.selected-works > .items > .item {
+    width: 25%;
+    height: auto;
+}
+
+.selected-works > .items > .item > img {
+    padding: 20px;
+    width: 100%;
+}
+
+.section-title {
+    text-align: left;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    padding: 40px 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > .card {
+    margin: 10px;
+    background-color: #DEF4FF;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 260px;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+  
+label {
+    width: 32%;
+    float: none;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    color: #222222;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+input[type="radio"][id="structural"]:checked + label {
+    border-bottom: 2px solid blue;
+}
+  
+input[type="radio"][id="structural"]:checked ~ .developer {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+    display: none;
+}
+  
+input[type="radio"][id="developer"]:checked + label {
+    border-bottom: 2px solid blue;
+}
+
+input[type="radio"][id="developer"]:checked ~ .structural {
+    width:0;
+    height:0;
+    padding:0;
+    margin:0;
+    opacity:0;
+    display: none;
+}
+  
+input[type="radio"][id="all"]:checked + label {
+    border-bottom: 2px solid blue;
+}
+
+.footer {
+    background: #F4F4F4;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    color: rgba(0,0,0,0.3);
+    bottom: 0px;
+}
+
+.footer > .footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.footer > .footer-links > a {
+    color: black;
+    opacity: 0.15;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0px 10px;
+}
+
+.footer > .footer-links > a:hover {
+    opacity: 1;
+}
+
+.card-project {
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+      
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 280px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+      
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+      
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+      
+/* Position the front and back side */
+.card-project, .card-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+      
+/* Style the front side (fallback if image is missing) */
+.card-project {
+    background-color: #bbb;
+    color: black;
+}
+      
+/* Style the back side */
+.card-info {
+    background-color: #98B6BF;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 5px;
+}
+
+.card-info > h4 {
+    padding-top: 5px;
+}
+    
+/* .modal-body {
+    padding: 20px;
+} 
+    
+.modal-body > img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.modal-body > a {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.modal-body > p {
+    text-align: left;
+}
+
+.modal-body > ul > li {
+    text-align: left;
+}
+
+.modal-body > .large-photo {
+    max-width:300px;
+    height: auto;
+} */
+
+.modal-body > .carousel-control-prev-icon {
+    color: black;
+}
+
+.modal-body > .carousel-control-next-icon {
+    color: black;
+} 
+
+.modal-body > .carousel-control-next {
+    filter: invert(50%);
+}
+   
+.modal-body > .carousel-control-prev {
+    filter: invert(50%);
+}
+
+
+    
+.filter-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.card-info p{
+    padding: 10px;
+}
+    
+.tile {
+    height:100%;
+    transition:all 1s;
+    width:98%;
+    float:none;
+    margin:0 auto;
+    padding:1%;
+}
