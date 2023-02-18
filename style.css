@@ -127,16 +127,43 @@ body {
 .selected-works > .items {
     display: flex;
     justify-content: space-around;
+    margin: 10px 40px;
 }
 
 .selected-works > .items > .item {
-    width: 25%;
+    width: 30%;
     height: auto;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .selected-works > .items > .item > img {
     padding: 20px;
     width: 100%;
+    max-height: 200px;
+    align-self: center;
+}
+
+.card {
+    position: relative;
+}
+
+.card > .card-body {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+
+.card > .card-body > ul {
+    text-align: justify;
+    padding-right: 2rem;
+    align-self: start;
+}
+
+.card > a {
+    position: absolute;
+    align-self: end;
 }
 
 .section-title {
