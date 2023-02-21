@@ -180,6 +180,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container > .card {
@@ -450,9 +451,4 @@ input[type="radio"][id="all"]:checked + label {
         margin: 1%;
         padding: 1%;
     }
-}
-
-.tabs-underlined {
-    display: flex;
-    align-items: center;
 }
