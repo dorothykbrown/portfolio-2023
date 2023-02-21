@@ -201,7 +201,7 @@ input[type="radio"] {
 }
   
 label {
-    width: 32%;
+    width: 25%;
     float: none;
     text-align: center;
     background: #ffffff;
@@ -402,6 +402,9 @@ input[type="radio"][id="all"]:checked + label {
 .tile {
     height: 100%;
     transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 100px) and (max-width: 575px) {
@@ -426,7 +429,7 @@ input[type="radio"][id="all"]:checked + label {
     .tile {
         width: 49%;
         float: left;
-        margin: 0 auto;
+        margin: 0.5%;
         padding: 0.5%;
     }
 }
@@ -435,7 +438,7 @@ input[type="radio"][id="all"]:checked + label {
     .tile {
         width: 32%;
         float: left;
-        margin: 0 auto;
+        margin: 0.5%;
         padding: 0.5%;
     }
 }
@@ -444,7 +447,12 @@ input[type="radio"][id="all"]:checked + label {
     .tile {
         width: 31%;
         float: left;
-        margin: 0 auto;
+        margin: 1%;
         padding: 1%;
     }
+}
+
+.tabs-underlined {
+    display: flex;
+    align-items: center;
 }
