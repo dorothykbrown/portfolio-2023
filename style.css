@@ -22,7 +22,7 @@ body {
     z-index: 2;
 }
 
-.nav-link:active {
+.nav-item > a.active {
     border-bottom: 2px solid #FF4F4F;
 }
 
