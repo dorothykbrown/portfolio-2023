@@ -1,117 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/0a76dbf0fd.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="banner">
-        <h1>Dorothy Brown</h1>
-        <h3>Software and Structural Engineer</h3>
-    </div>
-  
-    <div class="about-me">
-        <div class="photo">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675102178/Dorothy_Selfie_tn0xqq.jpg"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <script src="https://kit.fontawesome.com/0a76dbf0fd.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;700&family=Merriweather:wght@300;400&family=Zen+Kaku+Gothic+Antique:wght@400;500family=Jost:wght@300;400;500;600&family=Karla:wght@200;300&family=Merriweather:wght@300;400&family=Open+Sans:wght@300;400;700&family=Zen+Kaku+Gothic+Antique:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1677069362/My_project_rskvtl.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-header">
+                <h1>Dorothy Brown</h1>
+                <h3>Software and Structural Engineer</h3>
+            </div>
+            <div class="photo">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676648885/My_project_mbvlbo.png"/>
+                <div class="circle-beige"></div>
+                <div class="circle-pink"></div>
+                <div class="square-blue"></div>
+            </div>
         </div>
-        <div class="description">
+
+        <div class="arrow-down-button">
+            <a href="#about">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1677022375/download-icon-down_expand_icon-1320085938510071938_512_zg9xl3.png">
+            </a>
+        </div>
+
+        <div id="about" class="about">
+
+            <div class="about-content">
+                <div class="skill-grid">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512684/Ruby_xdfblo.png" alt="Ruby">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513007/Rails_Logo_w8pxtx.png" alt="Ruby On Rails">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512891/JS_Icon_Circle_zr8fdr.svg" alt="JavaScript">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512178/CSS_icon_xpvyjl.svg" alt="CSS">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512598/Sass_Circle_ahmvzd.png" alt="Sass">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512336/HTML5_kconja.svg" alt="HTML">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512759/github-cat-in-a-circle_318-41747_koak09.jpg" alt="GitHub">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513088/cloudinary_icon_djx8qc.png" alt="Cloudinary">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512038/go-programming-language_aenlnc.png" alt="Golang">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512045/kubernetes_1_tsmo2i.svg" alt="Kubernetes">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/docker_krouqg.png" alt="Docker">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/python_fqruxn.png" alt="Python">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633367323/django_logo_zhb3ot.png" alt="Django">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633368023/Graphql_Logo_auzrer.png" alt="GraphQL">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190710/terraform_vbub3w.png" alt="Terraform">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190674/React-icon_lu1tlo.png" alt="React">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/aws-lambda-logo_nreoqg.svg" alt="AWS Lambda">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/AWS_serverless_logo_accgjb.png" alt="AWS Serverless">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190887/material-ui-1_rzws8s.svg" alt="Material UI">
+                </div>
+                
+                <div class="description">
+                    <div class="title">
+                        <h2>Hi, I'm Dorothy!</h2>
+                    </div>
+                    
+                    <p>
+                        I am a software engineer with 3+ years of experience in developing and delivering high-quality,
+                        scalable software solutions for the FinTech, Advertising and Automobile industries. 
+                        I am proficient in Python and have additional experience in Golang, Ruby, React and JavaScript, with expertise
+                        in developing RESTful APIs, microservices, and cloud-based applications. I led the development of
+                        multiple projects, including a reporting system to provide users with real-time insights into their
+                        ad performance on Bing, Facebook and Google, resulting in improved customer experience and increased revenue.
+        
+                    </p>
+                    <p>
+                        I hold a Master of Science from the Massachusetts Institute of Technology in Civil Engineering
+                        and Sustainability and previously worked as a project engineer on large and small-scale projects around the
+                        greater New York City area. Additionally, I was awarded a fellowship 
+                        from the Fulbright U.S. Student Program to conduct research in the Pontificia Universidade Catolica in 
+                        Rio de Janeiro, Brazil on the use of natural materials in sustainable contruction.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="work" class="selected-works">
             <div class="section-title">
-                <h2>Hi, I'm Dorothy!</h2>
+                <h2>Selected Works</h2>
             </div>
-            
-            <p>
-                I am a software engineer with 3+ years of experience in developing and delivering high-quality,
-                scalable software solutions for the FinTech, Advertising and Automobile industries. 
-                I am proficient in Python and have additional experience in Golang, Ruby, React and JavaScript, with expertise
-                in developing RESTful APIs, microservices, and cloud-based applications. I led the development of
-                multiple projects, including a reporting system to provide users with real-time insights into their
-                ad performance on Bing, Facebook and Google, resulting in improved customer experience and increased revenue.
 
-            </p>
-            <p>
-                I hold a Master of Science from the Massachusetts Institute of Technology in Civil Engineering
-                and Sustainability and previously worked as a project engineer on large and small-scale projects around the
-                greater New York City area. Additionally, I was awarded a fellowship 
-                from the Fulbright U.S. Student Program to conduct research in the Pontificia Universidade Catolica in 
-                Rio de Janeiro, Brazil on the use of natural materials in sustainable contruction.
-            </p>
+            <div class="items">
+                <div class="card item" style="width: 28rem;">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675189895/indebted_logo_kezzln.png" class="card-img-top" alt="InDebted">
+                    <div class="card-body">
+                        <p>Stack: React, AWS Serverless, Golang, Terraform</p>
+                        <ul>
+                            <li>Developed a self-service portal for clients, reducing support overhead and enhancing business offerings.</li>
+                            <li>Collaborated with a team of 2-3 engineers to build new features</li>
+                            <li>Grew technical expertise, including React and AWS serverless</li>
+                        </ul>
+                        <a href="https://www.indebted.co/en-GB" class="btn btn-primary">Visit Company Website</a>
+                    </div>
+                </div>
+    
+                <div class="card item" style="width: 28rem;">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676649359/My_project-1_dpyjic.png" class="card-img-top" alt="Leadzai">
+                    <div class="card-body">
+                        <p>Stack: Python, Django, GraphQL, HTML, PostgreSQL</p>
+                        <ul>
+                            <li>Developed and maintained a reporting system to provide users with real-timeinsights into their ad performance on Bing, Facebook and Google</li>
+                            <li>Created and implemented a work-scheduler that automated the import and download of reports and optimization data from tird-party networks.</li>
+                            <li>Enhanced and streamlined the ad-creation process with AI-driven suggestions and optimization.</li>
+                        </ul>
+                        <a href="https://www.leadzai.com/" class="btn btn-primary">Visit Company Website</a>
+                    </div>
+                </div>
+    
+                <div class="card item" style="width: 28rem;">
+                    <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg" class="card-img-top" alt="freiheit.com">
+                    <div class="card-body">
+                        <p>Stack: Golang, Kubernetes, Docker</p>
+                        <ul>
+                            <li>Developed a video streaming microservice for an in-car entertainment system</li>
+                            <li>Built features for a music streaming microservice</li>
+                            <li>Collaborated with the client to ensure features met their requirements</li>
+                        </ul>
+                        <a href="https://freiheit.com/" class="btn btn-primary">Visit Company Website</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed section-title" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <h2>Additional Works</h2>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="projects" id="projects">
+                            <div class="container">
+                                <input class="filter-item" type="radio" id="all" name="industry"/>
+                                <label for="all">All</label>
+                                <input class="filter-item" type="radio" id="structural" name="industry"/>
+                                <label for="structural">Structural</label>
+                                <input class="filter-item" type="radio" id="developer" name="industry"/>
+                                <label for="developer">Developer</label>
+                                
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159628/EastFlatbush.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>East Flatbush Library</h4>
+                                                <p>Complete renovation of an existing library building that once completed will create a bright, central patron area full of natural light in addition to an innovative façade.
+                                                </p>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-EFL">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSyn.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>Park Avenue Synagogue</h4>
+                                                <p>Renovation of the iconic Park Avenue Synagogue including the removal of about 70% of the 4th floor slab and the re-support of the columns above.
+                                                </p>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-PASyn">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/Pier57.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>Pier 57</h4>
+                                                <p>Conversion of historic shipping terminal listed on State and National Registers into a retail, arts and entertainment, office and public park complex.</p>
+                                                
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Pier57">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile developer">
+                                    <div class="flip-card developer filter-item" data-category="developer">
+                                        <div class="flip-card-inner developer">
+                                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg)">
+                                            </div>
+                                            <div class="card-info developer">
+                                                <h4>freiheit.com</h4>
+                                                <p>Developed microservices for an in-car entertainment system in Golang.</p>
+                                            
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Freiheit">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile developer">
+                                    <div class="flip-card developer filter-item" data-category="developer">
+                                        <div class="flip-card-inner developer">
+                                            <div class="card-project developer" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159627/WhimAway.png)">
+                                            </div>
+                                            <div class="card-info developer">
+                                                <h4>WhimAway</h4>
+                                                <p>Developed a responsive clone of AirBnb allowing users to rent Whimsical properties--Castles, Treehouses, Sailboats</p>
+                                                
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Whim">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile developer">
+                                    <div class="flip-card developer filter-item" data-category="developer">
+                                        <div class="flip-card-inner developer">
+                                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/InstaItinerary.png)">
+                                            </div>
+                                            <div class="card-info developer">
+                                                <h4>InstaItinerary</h4>
+                                                <p>Developed a responsive web app that generates an itinerary of events based on user preferences and amount of time they have available.</p>
+                                            
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Insta-Modal">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159626/ParkAveSouth.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>Park Avenue South</h4>
+                                                <p>Transformation of the former United Charities Building, an existing 9-story structure, into an 18-story commercial and residential building.</p>
+                                                
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>475 10th Avenue</h4>
+                                                <p>Fit-out of the twelfth and thirteenth floors of an existing building for office space including the addition of 50-ft long interior bridge.
+                                                </p>
+                                                
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-475_10thAve">
+                                                More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile structural">
+                                    <div class="flip-card structural filter-item" data-category="structural">
+                                        <div class="flip-card-inner structural">
+                                            <div class="card-project structural" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png)">
+                                            </div>
+                                            <div class="card-info structural">
+                                                <h4>West 76th Street</h4>
+                                                <p>Gut-renovation of a townhouse residence including the design of 5 different stair types to connect the interior and new rooftop green spaces.
+                                                </p>
+                                                
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-41W76">
+                                                    More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tile developer">
+                                    <div class="flip-card developer filter-item" data-category="developer">
+                                        <div class="flip-card-inner developer">
+                                            <div class="card-project developer" id="special-card-img" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/dkqk3hnm6/image/upload/v1676649359/My_project-1_dpyjic.png)">
+                                            </div>
+                                            <div class="card-info developer">
+                                                <h4>Leadzai</h4>
+                                                <p>Implemented new features for an ad management web app using Python and Django.</p>
+                                            
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal-Leadzai">
+                                                    More Information
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="https://github.com/dorothykbrown" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/dorothy-brown/" target="blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
+  
+
+<!-- 41W76 Modal -->
+<div class="modal fade" id="Modal-41W76" tabindex="-1" aria-labelledby="Modal-41W76Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="Modal-41W76Title">76th Street Residence</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/41W76St.png" alt="76th Street Residence" style="width: 100%;">
+                <p>Architect: RAAD Studio</p>
+                <p>My Role:</p>
+                <ul>
+                    <li>Determined the loads - dead and live - per NYC Building Code Chapter 16</li>
+                    <li>Designed steel members per AISC manual</li>
+                    <li>Designed three custom steel bent-plate staircases using RISA 3-D and AISC manual and ASD load combinations</li>
+                    <li>Selected cold-formed steel joists for floor framing</li>
+                    <li>Reviewed steel shop drawings</li>
+                    <li>Visited the site to observe field conditions and respond to contractor's concerns</li>
+                </ul>
+                <a href="http://raadstudio.com/project/central-park-west/" target="blank">Visit Architect Website</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="selected-works">
-        <div class="section-title">
-            <h2>Selected Works</h2>
+<!-- 475_10thAve Modal -->
+<div class="modal fade" id="Modal-475_10thAve" tabindex="-1" aria-labelledby="Modal-475_10thAveTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="Modal-475_10thAveTitle">475 10th Ave</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-       
-        <div class="items">
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675189895/indebted_logo_kezzln.png">
-                <p>Stack: React, AWS Serverless, Golang, Terraform</p>
-                <ul>
-                <li>Developed a self-service portal for clients, reducing support overhead and enhancing business offerings.</li>
-                <li>Collaborated with a team of 2-3 engineers to build new features</li>
-                <li>Grew technical expertise, including React and AWS serverless</li>
-                </ul>
-                <a href="https://www.indebted.co/en-GB" target="blank">Visit Company Website</a>
+        <div class="modal-body">
+            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561159625/475TenthAve.png" alt="475 10th Ave" style="width: 100%;">
+            <p>Architect: Andrew Franz Architect</p>
+            <p>My Role:</p>
+            <ul>
+                <li>Analyzed existing structural members per NYC Building Code Chapter 16</li>
+                <li>Designed a custom, 50-foot span interior bridge that was asymmetrical in plan and had only one additional support</li>
+                <li>Maintained ongoing coordination with the architect</li>
+                <li>Supported architect and contractors during construction, reviewing shop drawings and providing periodic site visits to address unexpected existing conditions</li>
+            </ul>
+            <a href="https://andrewfranz.com/hill-offices.html" target="blank">Visit Architect Website</a>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Leadzai Modal -->
+<div class="modal fade" id="Modal-Leadzai" tabindex="-1" aria-labelledby="leadzai-ModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="leadzai-ModalTitle">Leadzai</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675082654/Leadzai_Logo_Long_sqwmpe.jpg">
+            <div class="modal-body">
                 <p>Stack: Python, Django, GraphQL, HTML, PostgreSQL</p>
                 <ul>
-                <li>Developed and maintained a reporting system to provide users with real-timeinsights into their ad performance on Bing, Facebook and Google</li>
-                <li>Created and implemented a work-scheduler that automated the import and download of reports and ptimization data from tird-party networks.</li>
-                <li>Enhanced and streamlined the ad-creation process with AI-driven suggestions and optimization.</li>
+                    <li>Implemented new backend features for an online ad creation and management platform
+                    </li>
+                    <li>Used Bing, Facebook and Google Adwords APIs to integrate Ad reporting features with the application</li>
+                    <li>Aided in site maintenance, fixing and reporting bugs</li>
                 </ul>
-                <a href="https://www.advertio.com/" target="blank">Visit Company Website</a>
+                <a href="https://www.leadzai.com/" target="blank">Visit Company Website</a>
             </div>
-            <div class="item">
-                <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513310/freiheit_com_logo_b8orvo.svg">
-                <p>Stack: Golang, Kubernetes, Docker</p>
-                <ul>
-                <li>Developed a video streaming microservice for an in-car entertainment system</li>
-                <li>Built features for a music streaming microservice</li>
-                <li>Collaborated with the client to ensure features met tehir requirements</li>
-                </ul>
-                <a href="https://freiheit.com/" target="blank">Visit Company Website</a>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
-            
-        </div>
-    </div>
-
-    <div class="skills-technologies">
-        <div class="section-title">
-            <h2>Skills / Technologies</h2>
-        </div>
-        <div class="skill-grid">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512684/Ruby_xdfblo.png" alt="Ruby">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513007/Rails_Logo_w8pxtx.png" alt="Ruby On Rails">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512891/JS_Icon_Circle_zr8fdr.svg" alt="JavaScript">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389037/Bootstrap_Icon_ej1hif.png" alt="Bootstrap">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512178/CSS_icon_xpvyjl.svg" alt="CSS">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512598/Sass_Circle_ahmvzd.png" alt="Sass">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512336/HTML5_kconja.svg" alt="HTML">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512759/github-cat-in-a-circle_318-41747_koak09.jpg" alt="GitHub">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/icon_git_z08two.png" alt="Git">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1561389034/Heroku_Icon_xhttxb.png" alt="Heroku">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580513088/cloudinary_icon_djx8qc.png" alt="Cloudinary">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512038/go-programming-language_aenlnc.png" alt="Golang">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580512045/kubernetes_1_tsmo2i.svg" alt="Kubernetes">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/docker_krouqg.png" alt="Docker">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1580511552/python_fqruxn.png" alt="Python">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633367323/django_logo_zhb3ot.png" alt="Django">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1633368023/Graphql_Logo_auzrer.png" alt="GraphQL">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190710/terraform_vbub3w.png" alt="Terraform">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190674/React-icon_lu1tlo.png" alt="React">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/aws-lambda-logo_nreoqg.svg" alt="AWS Lambda">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190624/AWS_serverless_logo_accgjb.png" alt="AWS Serverless">
-            <img src="https://res.cloudinary.com/dkqk3hnm6/image/upload/v1675190887/material-ui-1_rzws8s.svg" alt="Material UI">
         </div>
     </div>
     <div class="footer">
