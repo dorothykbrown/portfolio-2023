@@ -269,6 +269,25 @@ input[type="radio"][id="all"]:checked + label {
 }
 
 .footer > .footer-links > a {
+    background: #F4F4F4;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+    color: rgba(0,0,0,0.3);
+    bottom: 0px;
+}
+
+.footer > .fa-heart {
+    color: #D23333;
+}
+  
+.footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
+}
+
+.footer-links >  a {
     color: black;
     opacity: 0.15;
     text-decoration: none;
@@ -487,3 +506,8 @@ input[type="radio"][id="all"]:checked + label {
         padding: 1%;
     }
 }
+.footer-links > a:hover {
+    opacity: 1;
+}
+  
+
