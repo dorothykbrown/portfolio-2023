@@ -424,6 +424,19 @@ input[type="radio"][id="all"]:checked + label {
         margin: 0 auto;
         padding: 1%;
     }
+    .about-content {
+        flex-direction: column;
+    }
+    .selected-works > .items {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .selected-works > .items > .item {
+        margin: 0 auto;
+    }
+    .card {
+        margin: 20px 0;
+    }
 }
 
 @media (min-width: 576px) {
@@ -433,6 +446,16 @@ input[type="radio"][id="all"]:checked + label {
         margin: 0 auto;
         padding: 1%;
     }
+    .about-content {
+        flex-direction: column;
+    }
+    .selected-works > .items {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .selected-works > .items > .item {
+        margin: 0 auto;
+    }
 }
 
 @media (min-width: 768px) {
@@ -441,6 +464,9 @@ input[type="radio"][id="all"]:checked + label {
         float: left;
         margin: 0.5%;
         padding: 0.5%;
+    }
+    .selected-works > .items {
+        margin: 0 auto;
     }
 }
 
